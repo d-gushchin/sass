@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sassline</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<selecton>
+    <div class="container">
+        <h2>SassLine</h2>
+
+        <p>Sassline has one aim and one aim only – to spread better typography across the responsive environment of the
+            web.</p>
+        <p>The idea is to have easy to use and maintain SCSS partials utilising the power of Sass to make the complex
+            calculations to set type on a baseline grid on the web, with a production ready CSS output. Using rems for
+            the font-sizing and the spacing measurements gives a simple way to use the proportions of the baseline grid
+            throughout the design. Sass mixins do all the heavy lifting so your job is easy.</p>
+        <p>OpenType features are enabled with font-feature-settings to give the most appropriate formatting of text and
+            some flourishes in the headings if available in the web font and supported in the browser.</p>
+        <p>Sassline includes some basic layouts, and includes mixins to create a main column with optimal measure and a
+            sidebar that doesn’t get too narrow.</p>
+    </div>
+    <div class="row">
+        <div class="column column__left">
+            <h3>Root font-size = ½ line-height</h3>
+            <p>Sassline works by setting the root font-size as half the line-height of the standard paragraph text. The height of the baseline grid is then effectively set at 2rem, with increments at each 1rem. This makes it nice and easy to work proportionally from the baseline with integer rem values to create harmony in your layout and typography. This is based off a technique for setting text in print documents.</p>
+        </div>
+
+        <div class="column column__right">
+            <h3>Documentation</h3>
+            <p>Sassline is fully commented with details in the SCSS. Set the font sizes with the fontsize mixin, set the
+                spacing using the baseline mixin or set both at once with the sassline mixin. Use rems for everything
+                else. Full documentation is in the works.</p>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Running / compiling</h2>
+        <p>You can also use your preferred methods for compiling Sass as long as you have Sass 3.3.7+. To just include the necessary partials in your existing sass project, you only need to import sassline-base.scss.</p>
+        <p>If you want to run Sassline as a standalone project use the gulp setup included (or modify it to your needs).</p>
+        <ol>
+            <li>Clone the repo or grab the zip file</li>
+            <li>Open a terminal window and cd into this directory</li>
+            <li>Run npm install -g gulp (this may need sudo in front)</li>
+            <li>Run npm install</li>
+        </ol>
+    </div>
+</selecton>
+</body>
+</html>

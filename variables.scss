@@ -1,0 +1,14 @@
+$mod_1: 1.067;
+$mod_2: 1.333;
+
+$h1-min: $mod_1 * $mod_1 * $mod_1 * $mod_1 * 1rem;
+$h1-max: $mod_2 * $mod_2 * $mod_2 * $mod_2 * 1rem;
+
+$h2-min: $mod_1 * $mod_1 * $mod_1 * 1rem;
+$h2-max: $mod_2 * $mod_2 * $mod_2 * 1rem;
+
+$h3-min: $mod_1 * $mod_1 * 1rem;
+$h3-max: $mod_2 * $mod_2 * 1rem;
+
+$p-min: $mod_1 * 1rem;
+$p-max: $mod_2 * 1rem;

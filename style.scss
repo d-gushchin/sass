@@ -1,0 +1,50 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+.row {
+  @include row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+
+  &__left {
+    margin-right: 1rem;
+    @include column-width(70%);
+  }
+
+  &__right {
+    @include column-width(30%);
+  }
+}
+
+.container, .row {
+  h1 {
+    @include fluid-type(font-size, 37.5rem, 80rem, $h1-min, $h1-max);
+  }
+
+  h2 {
+    @include fluid-type(font-size, 37.5rem, 80rem, $h2-min, $h2-max);
+  }
+
+  h3 {
+    @include fluid-type(font-size, 37.5rem, 80rem, $h3-min, $h3-max);
+  }
+
+  p, li {
+    @include fluid-type(font-size, 37.5rem, 80rem, $p-min, $p-max);
+  }
+}
+
+body {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}
+
