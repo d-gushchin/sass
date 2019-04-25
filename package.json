@@ -1,0 +1,22 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d-gushchin/sass.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/d-gushchin/sass/issues"
+  },
+  "homepage": "https://github.com/d-gushchin/sass#readme",
+  "dependencies": {
+    "cap-height": "^2.0.0"
+  }
+}
